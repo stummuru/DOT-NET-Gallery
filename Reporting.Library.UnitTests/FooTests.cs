@@ -4,14 +4,13 @@
 
     using FakeItEasy;
 
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
-
     using NewRelicHelpers;
 
-    [TestClass]
+    using NUnit.Framework;
+
     public class FooTests
     {
-        public class WhenWeDoSomethingCool : ContextSpecification
+        public class WhenWeDoSomethingCool : ContextSpecificationForNunit
         {
             private IFoo sut;
             private INewRelicLogging fakeNewRelicLogging;
@@ -29,7 +28,7 @@
                 sut.DoSomethingCool();
             }
 
-            [TestMethod]
+            [Test]
             public void ThenNewRelicShouldBeNotifiedWithCustomParameter()
             {
                 A.CallTo(() => fakeNewRelicLogging.AddCustomParameter(A<string>.Ignored, A<string>.Ignored))

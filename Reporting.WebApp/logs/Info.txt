@@ -1,1 +1,2 @@
 2017-01-16 20:38:11.9991|INFO|Reporting.Library.BusinessLogic.Foo|Logging that we did something cool (unless no logger registered).
+2017-01-17 09:52:01.3920|INFO|Reporting.Library.BusinessLogic.Foo|Logging that we did something cool (unless no logger registered).

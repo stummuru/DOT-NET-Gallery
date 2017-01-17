@@ -2,7 +2,7 @@
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-    public abstract class ContextSpecification
+    public abstract class ContextSpecificationForMsTest
     {
         [TestInitialize]
         public void TestInitialize()
