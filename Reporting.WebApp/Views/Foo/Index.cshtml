@@ -1,0 +1,18 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Foo Page</title>
+</head>
+<body>
+<div>
+    <input type="button" value="Create" onclick="location.href='@Url.Action("CreateLogEntry", "Foo")'" />
+</div>
+</body>
+</html>
